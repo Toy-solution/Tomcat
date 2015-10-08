@@ -1,7 +1,7 @@
 # test01
 
-## request
-
+## something need to know
+this is my pc's request:
 request="GET /test.html HTTP/1.1
 Host: localhost:8080
 Connection: keep-alive
@@ -12,4 +12,4 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like
 Accept-Encoding: gzip, deflate, sdch
 Accept-Language: en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4";
 
-uri=/test.html
+uri="/test.html"
