@@ -1,5 +1,6 @@
 package test02;
 
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.net.URLStreamHandler;
@@ -11,8 +12,8 @@ import javax.servlet.ServletResponse;
 
 public class ServletProcessor1 {
 
-  public void process(Request request, Response response) {
-
+  public void process(Request request, Response response) throws MalformedURLException, ClassNotFoundException {
+/*
     String uri = request.getUri();
     System.out.println("uri="+uri);
     String servletName = uri.substring(uri.lastIndexOf("/") + 1);
@@ -41,8 +42,10 @@ public class ServletProcessor1 {
     }
     catch (ClassNotFoundException e) {
       System.out.println(e.toString());
-    }
-
+    }*/
+	  URL myUrl[]={new URL("file:///D:/github/Toy-Tomcat/Tomcat/TOMCAT/src/test/")};
+	  URLClassLoader x = new URLClassLoader(myUrl);
+	    Class myClass = x.loadClass("test.PrimitiveServlet");
     Servlet servlet = null;
 
     try {
