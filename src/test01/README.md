@@ -1,6 +1,6 @@
 # test01
 
-## something need to know
+## need to know
 this is my pc's request:
 request="GET /test.html HTTP/1.1
 Host: localhost:8080
@@ -19,4 +19,6 @@ this application consists of three classes:
 - HttpServer
 - Request
 - Response
-and **webroot** folder.
+and **webroot** folder
+- image folder
+- test.html
