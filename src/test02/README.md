@@ -13,15 +13,22 @@ the first application consists of six classes:
 - ServletProcessor1
 - Constants
 
+and folder **webroot**
+- PrimitiveServlet
+
+**Note** : you must compile PrimitiveServlet.java before you run application.
+```
+javac -classpath url(servlet-api.jar's url) PrimitiveServlet.java
+```
+another way:
+- HttpServlet1
+- Request
+- Response
+- StaticResourceProcessor
+- ServletProcessor1
+- Constants
 and package **test**
 - PrimitiveServlet
 
-## Something about load class
-There are three ways to load classes into JVM.
+## Second application
 
-- loadClass() method 
-- Class.forName()
-- 'new' operator
-
-
-------------------------------------------------------

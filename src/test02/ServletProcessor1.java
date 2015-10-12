@@ -12,38 +12,51 @@ import javax.servlet.ServletResponse;
 
 public class ServletProcessor1 {
 
-  public void process(Request request, Response response) throws MalformedURLException, ClassNotFoundException {
-/*
-    String uri = request.getUri();
-    System.out.println("uri="+uri);
-    String servletName = uri.substring(uri.lastIndexOf("/") + 1);
-    System.out.println("servletName="+servletName);
-    URLClassLoader loader = null;
-    try {
-      // create a URLClassLoader
-      URL[] urls = new URL[1];
-      URLStreamHandler streamHandler = null;
-      File classPath = new File(Constants.WEB_ROOT);
-      // the forming of repository is taken from the createClassLoader method in
-      // org.apache.catalina.startup.ClassLoaderFactory
-      String repository = (new URL("file", null, classPath.getCanonicalPath() + File.separator)).toString() ;
-      // the code for forming the URL is taken from the addRepository method in
-      // org.apache.catalina.loader.StandardClassLoader class.
-      System.out.println("rep="+repository);
-      urls[0] = new URL(null, repository, streamHandler);
-      loader = new URLClassLoader(urls);
-    }
-    catch (IOException e) {
-      System.out.println(e.toString() );
-    }
-    Class<?> myClass = null;
-    try {
-      myClass = loader.loadClass(servletName);
-    }
-    catch (ClassNotFoundException e) {
-      System.out.println(e.toString());
-    }*/
-	  URL myUrl[]={new URL("file:///D:/github/Toy-Tomcat/Tomcat/TOMCAT/src/test/")};
+  public void process(Request request, Response response) {
+
+	    String uri = request.getUri();
+	    String servletName = uri.substring(uri.lastIndexOf("/") + 1);
+	    URLClassLoader loader = null;
+
+	    try {
+	      // create a URLClassLoader
+	      URL[] urls = new URL[1];
+	      URLStreamHandler streamHandler = null;
+	      File classPath = new File(Constants.WEB_ROOT);
+	      // the forming of repository is taken from the createClassLoader method in
+	      // org.apache.catalina.startup.ClassLoaderFactory
+	      String repository = (new URL("file", null, classPath.getCanonicalPath() + File.separator)).toString() ;
+	      // the code for forming the URL is taken from the addRepository method in
+	      // org.apache.catalina.loader.StandardClassLoader class.
+	      urls[0] = new URL(null, repository, streamHandler);
+	      loader = new URLClassLoader(urls);
+	    }
+	    catch (IOException e) {
+	      System.out.println(e.toString() );
+	    }
+	    Class myClass = null;
+	    try {
+	      myClass = loader.loadClass(servletName);
+	    }
+	    catch (ClassNotFoundException e) {
+	      System.out.println(e.toString());
+	    }
+
+	    Servlet servlet = null;
+
+	    try {
+	      servlet = (Servlet) myClass.newInstance();
+	      servlet.service((ServletRequest) request, (ServletResponse) response);
+	    }
+	    catch (Exception e) {
+	      System.out.println(e.toString());
+	    }
+	    catch (Throwable e) {
+	      System.out.println(e.toString());
+	    }
+	    //this is  to run application1 by another way
+	/*
+	 *  URL myUrl[]={new URL("file:///D:/github/Toy-Tomcat/Tomcat/TOMCAT/src/")};
 	  URLClassLoader x = new URLClassLoader(myUrl);
 	    Class myClass = x.loadClass("test.PrimitiveServlet");
     Servlet servlet = null;
@@ -58,6 +71,6 @@ public class ServletProcessor1 {
     catch (Throwable e) {
       System.out.println(e.toString());
     }
-
+*/
   }
 }
