@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="D:/java/tomcat7/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="D:/github/Toy-Tomcat/Tomcat/TOMCAT/lib/commons-beanutils.jar"/>
+	<classpathentry kind="lib" path="D:/github/Toy-Tomcat/Tomcat/TOMCAT/lib/commons-collections.jar"/>
+	<classpathentry kind="lib" path="D:/github/Toy-Tomcat/Tomcat/TOMCAT/lib/commons-daemon.jar"/>
+	<classpathentry kind="lib" path="D:/github/Toy-Tomcat/Tomcat/TOMCAT/lib/commons-digester.jar"/>
+	<classpathentry kind="lib" path="D:/github/Toy-Tomcat/Tomcat/TOMCAT/lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="D:/github/Toy-Tomcat/Tomcat/TOMCAT/lib/commons-modeler.jar"/>
+	<classpathentry kind="lib" path="D:/github/Toy-Tomcat/Tomcat/TOMCAT/lib/jaas.jar"/>
+	<classpathentry kind="lib" path="D:/github/Toy-Tomcat/Tomcat/TOMCAT/lib/jakarta-regexp-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/github/Toy-Tomcat/Tomcat/TOMCAT/lib/jcert.jar"/>
+	<classpathentry kind="lib" path="D:/github/Toy-Tomcat/Tomcat/TOMCAT/lib/jnet.jar"/>
+	<classpathentry kind="lib" path="D:/github/Toy-Tomcat/Tomcat/TOMCAT/lib/jsse.jar"/>
+	<classpathentry kind="lib" path="D:/github/Toy-Tomcat/Tomcat/TOMCAT/lib/mx4j.jar"/>
+	<classpathentry kind="lib" path="D:/github/Toy-Tomcat/Tomcat/TOMCAT/lib/naming-common.jar"/>
+	<classpathentry kind="lib" path="D:/github/Toy-Tomcat/Tomcat/TOMCAT/lib/naming-factory.jar"/>
+	<classpathentry kind="lib" path="D:/github/Toy-Tomcat/Tomcat/TOMCAT/lib/naming-resources.jar"/>
+	<classpathentry kind="lib" path="D:/github/Toy-Tomcat/Tomcat/TOMCAT/lib/servlet.jar"/>
+	<classpathentry kind="lib" path="D:/github/Toy-Tomcat/Tomcat/TOMCAT/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="D:/github/Toy-Tomcat/Tomcat/TOMCAT/lib/tomcat-util.jar"/>
+	<classpathentry kind="lib" path="D:/github/Toy-Tomcat/Tomcat/TOMCAT/lib/xercesImpl.jar"/>
+	<classpathentry kind="lib" path="D:/github/Toy-Tomcat/Tomcat/TOMCAT/lib/xmlParserAPIs.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
