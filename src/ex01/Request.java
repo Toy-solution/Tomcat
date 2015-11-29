@@ -1,4 +1,4 @@
-package test01;
+package ex01;
 
 import java.io.InputStream;
 import java.io.IOException;

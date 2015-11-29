@@ -1,4 +1,4 @@
-package test02;
+package ex02;
 
 import java.io.IOException;
 import java.io.BufferedReader;

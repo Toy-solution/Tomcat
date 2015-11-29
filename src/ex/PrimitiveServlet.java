@@ -1,4 +1,4 @@
-package test;
+package ex;
 
 import javax.servlet.*;
 import java.io.IOException;
