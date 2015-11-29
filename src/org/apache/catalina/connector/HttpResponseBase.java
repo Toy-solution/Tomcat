@@ -12,6 +12,7 @@ import java.security.PrivilegedExceptionAction;
 import java.security.PrivilegedActionException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -228,14 +229,14 @@ public class HttpResponseBase
      * Return an array of all the header names set for this response, or
      * a zero-length array if no headers have been set.
      */
-    public String[] getHeaderNames() {
+/*    public String[] getHeaderNames() {
 
         synchronized (headers) {
             String results[] = new String[headers.size()];
             return ((String[]) headers.keySet().toArray(results));
         }
 
-    }
+    }*/
 
 
     /**
@@ -1191,6 +1192,34 @@ public class HttpResponseBase
         this.message = message;
 
     }
+
+
+	@Override
+	public void setCharacterEncoding(String arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+/*	@Override
+	public Collection<String> getHeaderNames() {
+		// TODO Auto-generated method stub
+		return null;
+	}*/
+
+
+	@Override
+	public Collection<String> getHeaders(String arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+@Override
+public String[] getHeaderNames() {
+	// TODO Auto-generated method stub
+	return null;
+}
 
 
 }

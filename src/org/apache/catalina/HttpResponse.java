@@ -65,6 +65,8 @@
 package org.apache.catalina;
 
 
+import java.util.Collection;
+
 import javax.servlet.http.Cookie;
 
 
